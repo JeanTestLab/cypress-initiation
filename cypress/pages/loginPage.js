@@ -20,6 +20,10 @@ loginWithUser(username, password) {
     cy.get(this.selectorsList().loginButton).click()
 }
 
+
+checkAccessInvalid() {
+    cy.get(this.selectorsList().wrongCredentialAlert)
+}
 }
 //
 //class LoginPage {
